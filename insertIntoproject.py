@@ -9,7 +9,10 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 sql="insert into project (id,name,staff) values (%s,%s,%s)"
-values = (1,"Education and Training",10)
+id = input ("Enter id: ")
+name = input ("Enter name: ")
+staff = input ("Enter staff: ")
+values = (id,name,staff)
 
 cursor.execute(sql, values)
 

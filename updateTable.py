@@ -8,10 +8,11 @@ db = mysql.connector.connect(
 )
 
 cursor = db.cursor()
-sql="update project set name= %s, staff=%s"
-values = ("E & T",9)
+sql="update project set staff=%s where id = %s"
+id = input ("Enter id: ")
+staff = input ("Enter staff: ")
 
-cursor.execute(sql, values)
+cursor.execute(sql, (staff,id))
 
 db.commit()
 print("update done")
