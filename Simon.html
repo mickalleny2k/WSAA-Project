@@ -17,6 +17,14 @@
 
     </tbody></table>
     <div> <button id="showCreateButton" onclick="showCreate()">Create</button></div>
+    <div id='createUpdateForm' style="display: none">
+        <h2><span id="createLabel">Create a</span> <span id="updateLabel">update</span> Project</h2>
+        <input type="hidden" name="id"/>
+        Name <input type="text" name="name" /><br/>
+        Staff <input type="number" name="staff"/> <br/>
+        <span><button id="doCreateButton" onclick="doCreate()">Create</button></span>
+        <span><button id="doUpdateButton" onclick="doUpdate()">Update</button></span>
+</div>
 
 <script>
     function showCreate(){
