@@ -66,5 +66,17 @@ class ProjectDAO:
             currentkey = currentkey + 1 
         return project
 
+    def delete(self, id):
+        cursor = self.getcursor()
+        sql="delete from project where id = %s"
+        values = (id,)
+
+        cursor.execute(sql, values)
+
+        self.connection.commit()
+        self.closeAll()
+        
+        print("Delete done. Row " +str(id)+ " was deleted successfully.")
+        return
         
 projectDAO = ProjectDAO()

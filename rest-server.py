@@ -67,6 +67,8 @@ def update(id):
 def delete(id):
     projectDAO.delete(id)
     return jsonify({"done":True})
+    #print("Delete done. Row " +id+ "was deleted successfully.")
+    #return jsonify(projectDAO.delete(id))
 
 if __name__ == "__main__":
     app.run(debug = True)

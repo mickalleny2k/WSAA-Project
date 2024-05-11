@@ -8,7 +8,7 @@
     <h1>CORK SIMON COMMUNITY</h1>
     <table class="table" id="projectTable">
         <tbody><tr>
-            <th>ID</th>
+            <th>id</th>
             <th>Name</th>
             <th>Staff</th>
             <th> UPDATE </th>
@@ -71,7 +71,7 @@
             var project = getProjectFromForm();
             var rowElement = document.getElementById(project.id);
             updateProjectAjax(project);
-            setBookInRow(rowElement,project);
+            setProjectInRow(rowElement,project);
            
             clearForm();
             showViewAll();
@@ -96,7 +96,7 @@ function addProjectToTable(project){
     var cell4 = rowElement.insertCell(3);
     cell4.innerHTML = '<button onclick="showUpdate(this)">Update</button>'
     var cell5 = rowElement.insertCell(4);
-    cell5.innerHTML = '<button onclick=doDelete(this)>Delete</button>'
+    cell5.innerHTML = '<button onclick=doDelete(this)>delete</button>'
 
 }
     
@@ -124,7 +124,7 @@ function populateFormWithProject(project){
     var form = document.getElementById('createUpdateForm')
     form.querySelector('input[name="id"]').disabled = true
 
-    //form.querySelector('input[name="id"]').value  = project.id
+    form.querySelector('input[name="id"]').value  = project.id
     form.querySelector('input[name="name"]').value= project.name
     form.querySelector('input[name="staff"]').value= project.staff
     return project
@@ -158,7 +158,7 @@ function getAllAjax(){
 
 }
 function createProjectAjax(project){
-    //var book = {"title":"yoto", "author":"momo","price":800}
+    //var project = {"id":1, "name":"E & T","staff":9}
     console.log(JSON.stringify(project));
     $.ajax({
         "url": "/project",
@@ -179,7 +179,7 @@ function createProjectAjax(project){
     });
 }
 function updateProjectAjax(project){
-    //var book = {"title":"yoto", "author":"momo","price":800}
+    //var project = {"id":1, "name":"Education and Training","staff":33}
     console.log(JSON.stringify(project));
     $.ajax({
         "url": "/project/"+encodeURI(project.id),
