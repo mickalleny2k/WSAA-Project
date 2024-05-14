@@ -40,6 +40,7 @@ def create():
         "id": request.json['id'],
         "name": request.json['name'],
         "staff": request.json['staff'],
+        "residents": request.json['residents'],
     }
     addedproject = projectDAO.create(project)
     pyautogui.hotkey('f5') #Simulates F5 key press = page refresh
@@ -66,6 +67,8 @@ def update(id):
         foundProject['name'] = reqJson['name']
     if 'staff' in reqJson:
         foundProject['staff'] = reqJson['staff']
+    if 'residents' in reqJson:
+        foundProject['residents'] = reqJson['residents']
     projectDAO.update(id,foundProject)
     pyautogui.hotkey('f5') #Simulates F5 key press = page refresh
     return jsonify(foundProject)    
