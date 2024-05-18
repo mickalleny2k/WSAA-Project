@@ -7,7 +7,7 @@ from flask import Flask, request, jsonify, abort
 from projectDAO import projectDAO
 #import pyautogui
 #import deleteRow
-from termcolor import colored
+#from termcolor import colored
 
 app = Flask(__name__, static_url_path='', static_folder='.')
 #app = Flask(__name__)
@@ -28,6 +28,14 @@ def findbyid(id):
 @app.route('/resident/<int:id>', methods=['GET'])
 def findresbyid(id):
         return jsonify(projectDAO.findResByID(id))
+
+@app.route('/resident/<name>', methods=['GET'])
+def findresbyname(name):
+       return jsonify(projectDAO.findResByName(name))
+
+@app.route('/project/<name>', methods=['GET'])
+def findbyname(name):
+       return jsonify(projectDAO.findByName(name))
 
 # getall
 # curl http://127.0.0.1:5000/project
