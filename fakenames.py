@@ -26,11 +26,12 @@ def html():
         print(i,fake.name())
 
     
-
+#https://www.echolive.ie/corknews/arid-41364103.html
+#532 adults accessed emergency accommodation in Cork
     with open('fakenames.csv', 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['id', 'Name','Age', 'PPSN'])
-        for n in range(1, 10):
+        for n in range(1, 533):
             values = randint(1000000,9999999)
             randomLetter = random.choice(string.ascii_letters)
             ppsn = (str(values)+randomLetter)
