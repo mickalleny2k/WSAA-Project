@@ -26,7 +26,9 @@ Also create the web pages that can consume the API. I.e. performs CRUD operation
 
 ## Installation :
 Run the python program server.py in Visual Studio Code
+
 Click on the link : http://127.0.0.1:5000
+
 A web browser should open up.
 
 ![Screenshot](./images/installation.PNG)
