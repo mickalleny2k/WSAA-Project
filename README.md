@@ -27,10 +27,10 @@ Also create the web pages that can consume the API. I.e. performs CRUD operation
 ## Installation :
 Run the python program server.py in Visual Studio Code
 
-![Screenshot](installation.PNG)
+![Screenshot](./images/installation.PNG)
 
 ## Requirements :
 I ran the following command : pip freeze > Requirements.txt
 Please refer to Requirements.txt
 
-![Screenshot1](freeze.PNG)
+![Screenshot1](./images/freeze.PNG)
