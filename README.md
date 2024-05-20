@@ -41,3 +41,16 @@ I ran the following command : pip freeze > Requirements.txt
 Please refer to Requirements.txt
 
 ![Screenshot1](./images/freeze.PNG)
+
+## Jupyter Notebook
+Run the command  jupyter notebook in Anaconda console
+
+Jupyter Notebook should connect to the localhost and a web browser should automatically open up.
+
+Open the notebook fakeageppsn.ipynb
+
+![Screenshot](./images/Jupyter.PNG)
+
+![Screenshot](./images/Jupyter1.PNG)
+
+![Screenshot](./images/Jupyter2.PNG)
