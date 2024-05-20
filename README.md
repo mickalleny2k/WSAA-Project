@@ -1,4 +1,4 @@
-# WSAA-Project
+# Web Services and Applications(WSAA) Project
 
 ## Web App
 Here are the links to my web app: 
@@ -65,3 +65,25 @@ Open the notebook fakeageppsn.ipynb
 ![Screenshot](./images/Jupyter1.PNG)
 
 ![Screenshot](./images/Jupyter2.PNG)
+
+## ISSUES
+### Troubleshooting cloning errors
+
+https://docs.github.com/en/repositories/creating-and-managing-repositories/troubleshooting-cloning-errors
+
+If you're having trouble cloning a repository, check these common errors.
+1. HTTPS cloning errors
+ - Check your Git version
+ - Ensure the remote is correct
+ - Provide an access token
+ - Check your permissions
+ - Use SSH instead
+ 
+ 2. Error: Repository not found
+  - Check your spelling
+  - Checking your permissions
+  - Check your SSH access
+  - Check that the repository really exists
+  
+ 3. Error: Remote HEAD refers to nonexistent ref, unable to checkout
+
