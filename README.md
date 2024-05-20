@@ -35,6 +35,17 @@ A web browser should open up.
 
 ![Screenshot](./images/browser.PNG)
 
+The projectviewer.html page lists all of the Cork Simon projects. The user can create, update and delete projects.
+
+![Screenshot](./images/projectviewer.PNG)
+
+The residentviewer.html page lists all of the Cork Simon residents. The user can create, update and delete residents.
+
+![Screenshot](./images/residentviewer.PNG)
+
+The fakenames.html lists the id, name, age and PPSN of the Cork Simon residents. Needless to say the residents personal information is confidential. All of the residents info on this site is made up. I used the following libraries to make up resident info: faker, random and string.
+
+![Screenshot](./images/fakenames.PNG)
 
 ## Requirements :
 I ran the following command : pip freeze > Requirements.txt
